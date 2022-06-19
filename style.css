@@ -1,0 +1,90 @@
+:root {
+  --dark-bg: #1b2430;
+  --white: #ffffff;
+  --base-font: #f9f2ed;
+  --col-mail: #d93025;
+  --col-linkedin: #0a66c2;
+  --col-github: #0d1117;
+}
+
+body {
+  font-family: "Courier Prime", monospace;
+  margin: 0;
+  color: var(--base-font);
+  font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--dark-bg);
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  max-width: 1080px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.content > div {
+  padding: 15px;
+}
+
+.content > div > div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  padding: 0 8px;
+}
+
+.icon > i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 250ms;
+}
+
+.icon:hover > .bi-envelope {
+  color: var(--col-mail);
+}
+
+.icon:hover > .bi-linkedin {
+  color: var(--col-linkedin);
+}
+
+.icon:hover > .bi-github {
+  color: var(--col-github);
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  padding: 25px 0;
+}
+
+.footer > p {
+  margin: 0;
+}
